@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo-placeholder {
+    width: 150px;
+    height: 94px;
+  }
+  .logo-placeholder > img {
+    width: 100%;
+    height: 100%;
+  }
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .menu-icon .menu-bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+  }
+  
+
+  .hero {
+    background-image: url('img/nike-just-do-it.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .cta-btn {
+    padding: 15px 30px;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+ 
+  .products {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .products h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .product-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .product-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .product-item h3 {
+    margin-top: 15px;
+    font-size: 20px;
+  }
+  
+  .product-item p {
+    font-size: 16px;
+    color: #666;
+  }
+  .image-container {
+    position: relative; /* Create a positioning context */
+    width: 100%;        /* Ensure it takes up the full width */
+    height: auto;
+  }
+  .image-container img {
+    display: block; /* Removes bottom white space under the image */
+    width: 100%;    /* Make sure the image is responsive */
+    height: auto;
+  }
+  #canvas {
+    position: absolute;
+    top: 48%;        
+    left: 47%;       
+    width: 85%;   
+    height: auto;  
+    pointer-events: none; 
+    z-index: 10;   
+  }
+
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 36px;
+    }
+  
+    .product-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+   .logo-placeholder{
+        width: 100px;
+        height: 50px;
+   }
+    .menu-icon {
+      display: block;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero h1 {
+      font-size: 28px;
+    }
+  
+    .hero p {
+      font-size: 16px;
+    }
+  
+    .product-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
