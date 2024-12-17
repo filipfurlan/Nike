@@ -11,5 +11,6 @@ Ustvaril sem prijavno in registracijsko stran, ki je oblikovana po vzoru Nike-a.
 ## Slike
 
 ![App Screenshot](img/ss1.png)
+
 ![App Screenshot](img/ss2.png)
 
