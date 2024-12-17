@@ -1,7 +1,7 @@
 
 # Nike
 
-Ustvaril sem prijavno in registracijsko stran, ki je oblikovana po vzoru Nike-a. Pri razvoju sem uporabil HTML, CSS in JavaScript. S pomočjo HTML-ja sem sestavil strukturo strani. CSS sem uporabil za oblikovanje vizualne podobe strani, da sem poskrbel za uporabniško prijazno in odzivno zasnovo, ki je primerna za različne naprave. V JavaScriptu pa sem uporabil bezierCurve funkcijo.
+Ustvaril sem prijavno in registracijsko stran, ki je oblikovana po vzoru Nike-a. Pri razvoju sem uporabil HTML, CSS in JavaScript. S pomočjo HTML-ja sem sestavil strukturo strani. CSS sem uporabil za oblikovanje vizualne podobe strani, da sem poskrbel za uporabniško prijazno in odzivno zasnovo, ki je primerna za različne naprave. V JavaScriptu pa sem uporabil bezierCurve funkcijo, in ta canvas postavil čez originalno sliko nike logota na čevljih.
 
 ## Funkionalnosti
 - Prilagodljivost glede na rezolucijo,
