@@ -1,3 +1,4 @@
+/* Existing CSS remains unchanged... */
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +15,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #fff;
+  background-color: #e8e6e6;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -222,6 +223,259 @@ body {
   }
 
   .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Testimonial Section Styles */
+.testimonials {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.testimonials h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.testimonial-item {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.testimonial-item p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.testimonial-item span {
+  font-size: 14px;
+  color: #666;
+  font-style: italic;
+}
+
+/* Social Media Section Styles */
+.social-media {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.social-media h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.instagram {
+  background-image: url('img/instagram-icon.png');
+}
+
+.twitter {
+  background-image: url('img/twitter-icon.jpg');
+}
+
+.facebook {
+  background-image: url('img/facebook-icon.png');
+}
+
+/* Newsletter Section Styles */
+.newsletter {
+  padding: 50px 20px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+.newsletter h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.newsletter p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.newsletter input {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.newsletter button {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background-color: #444;
+}
+
+/* Adjust grid for mobile */
+@media (max-width: 768px) {
+  .testimonial-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .social-icons {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Existing CSS remains unchanged... */
+
+/* Brand Story Section Styles */
+.brand-story {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.brand-story h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.brand-story p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Trending Products Section Styles */
+.trending-products {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #e8e8e8;
+}
+
+.trending-products h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.trending-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.trending-item img {
+  width: 100%;
+  height: auto;
+}
+
+.trending-item h3 {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.trending-item p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Call to Action Section Styles */
+.cta-section {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+}
+
+.cta-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.cta-section p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  padding: 15px 30px;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Image Gallery Section Styles */
+.image-gallery {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.image-gallery h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-grid {
     grid-template-columns: 1fr;
   }
 }
