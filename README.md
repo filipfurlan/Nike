@@ -14,7 +14,9 @@ V JavaScriptu sem dodal funkcionalnosti, med katerimi izstopa uporaba funkcije b
 
 ## Slike
 
-![App Screenshot](img/ss1.png)
+![App Screenshot](img/ss1r.png)
 
-![App Screenshot](img/ss2.png)
+![App Screenshot](img/ss2r.png)
+
+![App Screenshot](img/ss3r.png)
 
