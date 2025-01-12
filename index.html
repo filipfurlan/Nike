@@ -13,7 +13,15 @@
 
   <nav class="navbar">
     <div class="logo-placeholder">
-      <img src="img/realpot.svg" alt="nike_logo">
+      <svg xmlns="http://www.w3.org/2000/svg" width="50%" height="auto" viewBox="0 0 800 500">
+        <path id="Neimenovano #1" fill="black" stroke="black" stroke-width="1" d="M 688.26,141.22
+           C 240.33,263.33 206.33,285.00 160.51,263.46
+             110.00,239.33 137.33,174.67 154.01,141.46
+             154.01,141.46 153.43,141.00 153.43,141.00
+             153.43,141.00 54.67,236.67 62.50,311.00
+             71.50,381.50 158.50,373.50 220.00,350.50
+             220.00,350.50 689.00,141.50 689.00,141.50" />
+      </svg>
     </div>
     <ul class="nav-links">
       <li><a href="#">Home</a></li>
@@ -63,7 +71,9 @@
   <!-- New: Brand Story Section -->
   <section class="brand-story">
     <h2>Our Story</h2>
-    <p>At our core, we believe in performance. With cutting-edge design and innovative technology, we strive to provide athletes with the best products to break barriers. Our journey began with a commitment to crafting the finest footwear and apparel for all.</p>
+    <p>At our core, we believe in performance. With cutting-edge design and innovative technology, we strive to provide
+      athletes with the best products to break barriers. Our journey began with a commitment to crafting the finest
+      footwear and apparel for all.</p>
   </section>
 
   <!-- New: Trending Products Section -->
@@ -147,8 +157,8 @@
 
   <footer class="footer">
     <div class="footer-content">
-      <img src="img/nikeslika-removebg-preview.png" width="150px" height="100px">
-      <p>&copy; 2024 Nike Inspired Website. All rights reserved.</p>
+      <img src="img/nikeslika-removebg-preview1.png" width="150px" height="100px">
+      <p>&copy; 2024 Nike Inspired Website. All rights reserved. Remade by: Filip Furlan</p>
       <ul class="footer-links">
         <li><a href="#">Privacy Policy</a></li>
         <li><a href="#">Terms of Service</a></li>
@@ -157,7 +167,30 @@
     </div>
   </footer>
 
+  <div id="bottom-right-div" onclick="topFunction()">
+    <div class="arrow">↑</div>
 </body>
 <script src="js/canvas.js"></script>
+<script>
+  // Get the button:
+  let mybutton = document.getElementById("bottom-right-div");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () { scrollFunction() };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "flex";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+</script>
 
 </html>

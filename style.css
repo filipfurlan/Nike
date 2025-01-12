@@ -14,6 +14,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 60px;
   padding: 20px;
   background-color: #e8e6e6;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -56,6 +57,7 @@ body {
 
 .hero {
   background-image: url('img/nike-just-do-it.jpg');
+  width: 100%;
   background-size: cover;
   background-position: center;
   height: 80vh;
@@ -141,12 +143,81 @@ body {
 
 #canvas {
   position: absolute;
-  top: 48%;
-  left: 47%;
-  width: 85%;
+  top: 45%;
+  left: 39%;
+  width: 100%;
   height: auto;
   pointer-events: none;
   z-index: 10;
+}
+
+#bottom-right-div {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  cursor: pointer;
+  background-color: black;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#bottom-right-div .arrow {
+  font-size: 16px;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+#bottom-right-div:hover {
+  transform: scale(1.1);
+  /* Slightly enlarges the circle */
+  background-color: white;
+  /* Adds a background color on hover */
+}
+
+#bottom-right-div:hover .arrow {
+  color: black;
+  /* Changes the arrow color to white */
+}
+
+@media (max-width: 768px) {
+  #bottom-right-div {
+    width: 40px;
+    height: 40px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  #bottom-right-div .arrow {
+    font-size: 14px;
+  }
+  .social-icons{
+    display: flex;
+    width: 10px;
+  }
+  .social-icon{
+    width: 10px;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  #bottom-right-div {
+    width: 35px;
+    height: 35px;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  #bottom-right-div .arrow {
+    font-size: 12px;
+  }
 }
 
 /* Footer Styles */
@@ -226,6 +297,7 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
 /* Testimonial Section Styles */
 .testimonials {
   padding: 50px 20px;
@@ -359,6 +431,10 @@ body {
   .social-icons {
     flex-direction: column;
   }
+
+  .navbar {
+    height: 40px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -366,6 +442,7 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
 /* Existing CSS remains unchanged... */
 
 /* Brand Story Section Styles */
@@ -440,12 +517,13 @@ body {
 
 .cta-btn {
   padding: 15px 30px;
-  background-color: #000;
-  color: #fff;
+  background-color: #ebebeb;
+  color: #000;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bold;
   font-size: 18px;
+  border-radius: 5px;
 }
 
 /* Image Gallery Section Styles */

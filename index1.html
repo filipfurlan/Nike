@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="canvas" width="800" height="400"></canvas>
+</body>
+<script>
+    var c = document.getElementById("canvas");
+    var ctx = c.getContext("2d");
+    ctx.strokeStyle = "rgba(0,0,0,1)";
+    ctx.miterLimit = 4;
+    ctx.scale(0.2, 0.2);
+    ctx.translate(0,0);
+    ctx.fillStyle = "rgba(0,0,0,1)";
+    ctx.strokeStyle = "black";
+    ctx.beginPath();
+    ctx.moveTo(688.26, 141.22);
+    ctx.bezierCurveTo(240.33, 263.33, 206.33, 285, 160.51, 263.46);
+    ctx.bezierCurveTo(110, 239.33, 137.33, 174.67, 154.01, 141.46);
+    ctx.bezierCurveTo(154.01, 141.46, 153.43, 141, 153.43, 141);
+    ctx.bezierCurveTo(153.43, 141, 54.67, 236.67, 62.5, 311);
+    ctx.bezierCurveTo(71.5, 381.5, 158.5, 373.5, 220, 350.5);
+    ctx.bezierCurveTo(220, 350.5, 689, 141.5, 689, 141.5);
+    ctx.fill();
+    ctx.restore();
+
+
+</script>
+<style>
+    
+</style>
+</html>
