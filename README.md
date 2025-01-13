@@ -8,7 +8,7 @@ CSS sem nato uporabil za skrbno oblikovanje vizualne plati strani, kjer sem se o
 V JavaScriptu sem dodal funkcionalnosti, med katerimi izstopa uporaba funkcije bezierCurve, s katero sem ustvaril specifično obliko na elementu canvas. Ta canvas sem postavil neposredno čez originalno sliko Nike logotipa na čevljih, kar omogoča natančno prekrivanje logotipa z novo vizualno grafiko. S tem sem dosegel dinamično integracijo grafičnih elementov, ki so del spletne strani, in dodal interaktivni element nad obstoječo sliko.
 
 ## Funkionalnosti
-- Prilagodljivost glede na rezolucijo,
+- Prilagodljivost glede na ločljivost,
 - Bezier curve (canvas)
 
 
